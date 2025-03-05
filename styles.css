@@ -1,16 +1,22 @@
 body {
-    background-color: #121212;
-    color: #121212;
-    text-overflow: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(2,0,30);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(255,0,236,1) 100%);
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
-.textbutton {
-    background-color: red;
-    color: #fff;
-    border-radius: solid 2px;
-    border: none;
-    transform: translateY(-50%);
-    top: 50%;
-    transform: translateX(-50%);
-    left: -50%;
+@keyframes body {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+.background {
 }
